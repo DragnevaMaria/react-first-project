@@ -1,14 +1,4 @@
-
-// Ваша задача реализовать отображения массива постов на 
-// вашей странице. 
-// Для этого создаете компонент Post, который будет отображать 
-// данные о посте: заголовок поста, описание, картинку и автора. 
-// Все данные должны передаваться через props(не забываем типизацию).
-
-// Заголовок - тег h1
-// описание - тег p
-// картинка - тег img
-// автор - тег p 
+import { useState } from "react"
 
 export interface IPostProps{
     title: string,
@@ -19,12 +9,23 @@ export interface IPostProps{
 }
 
 export function Post(props:IPostProps){
+    const [amount, setAmount] = useState(0)
+    const [buttonDisabled, setButtonDisabled] = useState(false)
+    function incrementAmount() {
+        setAmount(amount+1)
+        setButtonDisabled(true)
     return (
         <div>
             <h1>{props.title}</h1>
             <p>{props.description}</p>
-            <img src={props.picture} alt="" />
+            <img style={{
+                width: 250,
+                height: 150
+            }} src={props.picture} alt="" />
             <p>{props.author}</p>
+            <p>Likes: {amount}</p>
+            <button onClick={incrementAmount} disabled={buttonDisabled}>♥</button>
+            <hr />
         </div>
     )
 }
