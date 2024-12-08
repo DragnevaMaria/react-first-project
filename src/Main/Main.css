@@ -1,0 +1,9 @@
+.Main {
+    display: flex;
+    /* background-color: #EDD7FF; */
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 16px;
+    margin: 15px;
+    height: 430px;
+    
+}

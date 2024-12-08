@@ -1,0 +1,19 @@
+.list-posts-select{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 15px;
+}
+.list-posts {
+    margin: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: auto; 
+    scrollbar-width: thin;
+    scrollbar-color: #BE8AFF #EDD7FF;
+}
+.select{
+    width: 100px;
+    height: 20px;
+}

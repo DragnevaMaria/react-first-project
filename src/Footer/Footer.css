@@ -1,0 +1,16 @@
+footer{
+    display: flex;
+    gap: 10px;
+    width: 98%;
+    height: 60px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: #BE8AFF 1px solid;
+    margin: 0.5% auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    box-shadow: 0 0px 5px 0 rgba(0,0,0,0.2), 0 0px 20px 0 rgba(0,0,0,0.04);
+}
