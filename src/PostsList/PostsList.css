@@ -16,4 +16,6 @@
 .select{
     width: 100px;
     height: 20px;
+    border: #BE8AFF 2px solid;
+    border-radius: 5px;
 }

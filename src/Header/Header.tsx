@@ -11,9 +11,10 @@ export function Header(){
             </Link>
             <Link to='/posts'>
                 <button className="category-button">
-                    Категории
+                    Categories
                 </button>
             </Link>
+            <input className="input-header" type="text" placeholder="Search for products...." />
         </div>
     )
   }

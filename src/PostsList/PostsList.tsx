@@ -135,6 +135,15 @@ export function PostsList(){
         console.log(selectedCategory)
     // Эффект сработает, если selectedCategory изменится
     }, [selectedCategory])
+    
+    useEffect(()=>{
+        async function getPosts(){
+            const response = await fetch('https://fakestoreapi.com/posts')
+            const posts = await response.json()
+            setFilteredPosts(posts)
+        }
+        getPosts()
+    },[])
 
     return <div className="list-posts-select">
         {/* <select> — это элемент для создания списка с вариантами (опциями) */}
