@@ -14,7 +14,17 @@ export function Header(){
                     Categories
                 </button>
             </Link>
-            <input className="input-header" type="text" placeholder="Search for products...." />
+            <input className="input-header" type="text" placeholder="Search for posts...." />
+            <Link to='/'>
+                <button className="category-button">
+                    Basket
+                </button>
+            </Link>
+            <img
+                className="imgProfile"
+                src="https://cdn-0.emojis.wiki/emoji-pics/apple/alien-monster-apple.png"
+                alt=""
+            />
         </div>
     )
   }

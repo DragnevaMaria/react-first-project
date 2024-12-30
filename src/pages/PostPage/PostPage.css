@@ -1,0 +1,85 @@
+.post_page{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #ffffff;
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    /* padding: 10px; */
+    margin: 3%;
+    font-size: 12px;
+    padding-top: 0px;
+    color: black;
+    border: #BE8AFF 2px dashed;
+}
+
+.p{
+    display: flex;
+    height: 100%;
+    margin: 1%;
+    font-size: 20px;
+    color: #BE8AFF;
+    cursor: pointer;
+    align-items: top;
+}
+
+.postPage{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.like_page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-direction: row;
+    padding-top: 3%;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.img_like{
+    display: flex;
+    align-items: center;
+    /* gap: 15%; */
+    /* max-width: 300px; */
+    max-height: 280px;
+    width: 300px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button_like{
+    background-color: #ffffff;
+    border-radius: 10px;
+    min-width: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 150px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: #BE8AFF 1px solid;
+    color: #BE8AFF;
+}
+
+.img-post_page{
+    /* width: auto; */
+    max-width: 80%;
+    /* height: auto; */
+    max-height: 230px;
+    border-radius: 16px;
+}
+
+.spinner{
+    width: 100%;
+    overflow: none; 
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

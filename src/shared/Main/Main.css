@@ -3,7 +3,9 @@
     /* background-color: #EDD7FF; */
     /* background-color: rgb(255, 255, 255); */
     border-radius: 16px;
+    background-color: #EDD7FF;
+    height: auto;
+    min-height: 70vh;
     margin: 15px;
-    height: 430px;
     
 }
