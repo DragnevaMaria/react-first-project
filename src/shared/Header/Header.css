@@ -6,14 +6,6 @@
     width: 55px;
     margin-left: 1%;
 }
-/*  */
-.input-header{
-    height: 40px;
-    width: 300px;
-    border-radius: 10px;
-    padding: 1%;
-    border: #BE8AFF 2px solid;
-}
 
 .category-button{
     display: flex;
@@ -58,4 +50,15 @@ a{
     height: 40px;
     width: 40px;
     margin-right: 1%;
+}
+
+
+@media screen and (max-device-width: 480px) {
+    .imgProfile, .category-button {
+        display: none;
+    }
+    .header{
+        justify-content: center;
+
+    }
 }

@@ -24,14 +24,16 @@ export function PostPage(){
                     <p onClick={() => {
                         navigate(-1)
                     }}
-                    >
-                    ⇐ 
-                    </p>
+                    > ⇐ </p>
                 </div>
                 <div className="img_like">
                     <img className="img-post_page" src={post?.image} alt="" />
                     <div className="like_page">
-                        <button className="button_like" onClick={incrementLikes} disabled={isLiked}>
+                        <button 
+                            className="button_like" 
+                            onClick={incrementLikes} 
+                            disabled={isLiked}>
+                                
                             ♥
                         </button>
                         <p>Likes: {likes}</p>

@@ -43,6 +43,7 @@ export function usePosts(){
                 setError(`${err}`)
             }
             finally{
+                // setIsLoading(true)
                 setIsLoading(false)
             }
         }

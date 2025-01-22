@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import "./Header.css"
+import { SearchBar } from "../SearchBar/SearchBar"
 
 export function Header(){
     return (
@@ -14,7 +15,8 @@ export function Header(){
                     Categories
                 </button>
             </Link>
-            <input className="input-header" type="text" placeholder="Search for posts...." />
+            <SearchBar></SearchBar>
+            {/* <input className="input-header" type="text" placeholder="Search for posts...." /> */}
             <Link to='/'>
                 <button className="category-button">
                     Basket

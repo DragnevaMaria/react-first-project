@@ -4,7 +4,9 @@ import { useEffect, useState } from "react"
 import { usePosts } from "../../hooks/usePosts"
 import { RingLoader } from "react-spinners"
 import { useCategories } from "../../hooks/useCategories"
+import hapiGif from '../../img/hapi.gif'
 import './PostsList.css'
+import { LikedPostsList } from "../LikedPostsList";
 
 export function PostsList(){
     const { posts, isLoading, error } = usePosts()
@@ -40,6 +42,7 @@ export function PostsList(){
     // },[])    
 
     return <div className="list-posts-select">
+        <LikedPostsList /> <br />
         {/* <select> — это элемент для создания списка с вариантами (опциями) */}
         {/* onChange — событие, срабатывающее, если пользователь меняет опцию */}
         <select className="select" onChange={(event)=>{
@@ -78,7 +81,13 @@ export function PostsList(){
                     color="#BE8AFF"
                     size={60}
                     speedMultiplier={0.5}
-                /></div>)
+                />
+                <img className="img-cat"
+                    src={hapiGif}
+                    alt="Loading..." 
+                    style={{ width: "100px", height: "100px"}}
+                />
+                </div>)
             }
         </div>
     </div>

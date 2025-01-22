@@ -67,6 +67,10 @@
     color: #BE8AFF;
 }
 
+.button_like:hover {
+    background-color: #f3f3f3;
+}
+
 .img-post_page{
     /* width: auto; */
     max-width: 80%;
